@@ -1,0 +1,20 @@
+.toke-container {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
+
+.toke-icon {
+  font-size: 80px;
+}
+
+.toke-text {
+  font-size: x-large;
+}
+
+@media screen and (max-width: 576px) {
+  .toke-text {
+    font-size: large;
+  }
+}
