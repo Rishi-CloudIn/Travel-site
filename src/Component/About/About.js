@@ -1,5 +1,7 @@
 import React from "react";
 import "./About.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 function About ()
 {
@@ -11,107 +13,122 @@ function About ()
           Investment Secured!
         </h1>
 
-        <h1 className="about-h1-number h1 fw-bold text-center my-4">
-          213,139.27%
-        </h1>
+        <AnimationOnScroll animateIn="animate__bounceIn">
+          <h1 className="about-h1-number h1 fw-bold text-center my-4">
+            213,139.27%
+          </h1>
+        </AnimationOnScroll>
+
 
         <h1 className="about-h1 h1 fw-bold text-center">
           Fixed Annual Percentage Yield
         </h1>
         <div className="about-content-div px-sm-5 px-1 py-4">
           <div className="row">
+
             <div className="col-md-8 col-12">
-              <h1 className="about-h1 h1 fw-bold text-left">About</h1>
-              <p className="h6 lh-base mt-4">
-                Financial freedom is everyone’s dream these days, We at
-                TRAVELERSE not only allow you to achieve this dream but also
-                help you in traveling and exploring this beautiful world of ours{" "}
-                <span className="about-span text-decoration-underline">
-                  - The Garden of Eden.
-                </span>{" "}
-                The law of compounding will get you there. You can easily double
-                your investment every 40 DAYS with our amazing 106.7% interest.{" "}
-                <span className="about-span">
-                  Which possibly allows you to turn $100 into $213,139 dollars
-                  within just 12 months.
-                </span>
-                <br />
-                <br />
-                Travelerse is the first crypto token that was built with an ACM
-                that protects you from the unnecessary dumps that plague
-                small-cap projects while giving you a super-high and sustainable
-                daily compounding interest rate of{" "}
-                <span className="about-span">2.1%</span>.
-                <br />
-                <br />
-                Travelerse also provides you with great{" "}
-                <span className="about-span">NFTs</span> that allow you to take
-                part in our travel universe where we provide you with unique
-                benefits to travel the world.
-              </p>
+              <AnimationOnScroll animateIn="animate__bounceInLeft">
+                <div>
+                  <h1 className="about-h1 h1 fw-bold text-left">About</h1>
+                  <p className="h6 lh-base mt-4">
+                    Financial freedom is everyone’s dream these days, We at
+                    TRAVELERSE not only allow you to achieve this dream but also
+                    help you in traveling and exploring this beautiful world of ours{" "}
+                    <span className="about-span text-decoration-underline">
+                      - The Garden of Eden.
+                    </span>{" "}
+                    The law of compounding will get you there. You can easily double
+                    your investment every 40 DAYS with our amazing 106.7% interest.{" "}
+                    <span className="about-span">
+                      Which possibly allows you to turn $100 into $213,139 dollars
+                      within just 12 months.
+                    </span>
+                    <br />
+                    <br />
+                    Travelerse is the first crypto token that was built with an ACM
+                    that protects you from the unnecessary dumps that plague
+                    small-cap projects while giving you a super-high and sustainable
+                    daily compounding interest rate of{" "}
+                    <span className="about-span">2.1%</span>.
+                    <br />
+                    <br />
+                    Travelerse also provides you with great{" "}
+                    <span className="about-span">NFTs</span> that allow you to take
+                    part in our travel universe where we provide you with unique
+                    benefits to travel the world.
+                  </p>
+                </div>
+              </AnimationOnScroll>
             </div>
+
             <div className="col-md-4 col-12">
-              <h1 className="about-h1 h2 fw-bold text-left">
-                Start investment: $100
-              </h1>
-              <ul className="mt-4">
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 1: $190
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 2: $350
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 3: $680
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 4: $1500
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 5: $2960
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 6: $5700
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 7: $11100
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 8: $22,900
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 9: $40,900
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 10: $75,000
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 11: $110,000
-                </li>
-                <li className="h6">
-                  <BsFillArrowRightCircleFill className="me-2 cu" />
-                  Month 12: $213,139
-                </li>
-              </ul>
+              <AnimationOnScroll animateIn="animate__bounceInRight">
+                <div>
+                  <h1 className="about-h1 h2 fw-bold text-left">
+                    Start investment: $100
+                  </h1>
+                  <ul className="mt-4">
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 1: $190
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 2: $350
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 3: $680
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 4: $1500
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 5: $2960
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 6: $5700
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 7: $11100
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 8: $22,900
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 9: $40,900
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 10: $75,000
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 11: $110,000
+                    </li>
+                    <li className="h6">
+                      <BsFillArrowRightCircleFill className="me-2 cu" />
+                      Month 12: $213,139
+                    </li>
+                  </ul>
+                </div>
+              </AnimationOnScroll>
             </div>
+
           </div>
         </div>
+
 
         <div className="about-content-div-1">
           <h3 className="h3 text-center">
             $TRAVELERSE Has The <br />
-            <span className="cu">Best Anti-Crash Mechanism</span> In the World
+            <span className="cu" >Best Anti-Crash Mechanism</span> In the World
           </h3>
           <p className="h6 py-3 mx-auto text-center about-p-1">
             When whales dump huge amounts of coins, your investment rapidly
@@ -122,7 +139,7 @@ function About ()
             winnings to explore this beautiful world.
           </p>
           <div className="d-flex justify-content-center mt-4">
-            <a href="#" className="btn-item">
+            <a href="void:" className="btn-item">
               <span>
                 <BsFillArrowRightCircleFill className="me-2" />
               </span>
@@ -130,6 +147,7 @@ function About ()
             </a>
           </div>
         </div>
+
       </div>
     </>
   );

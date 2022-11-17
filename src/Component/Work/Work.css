@@ -3,6 +3,43 @@
   /* color: var(--text-green); */
 }
 
+.work-animation-1 {
+  position: relative;
+  animation: example;
+  animation-duration: 2s;
+  animation-iteration-count: inherit;
+}
+.work-animation-2 {
+  position: relative;
+  animation: example2;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes example {
+  /* 0% {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  } */
+  from {
+    left: -20%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes example2 {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 0%;
+  }
+}
 /* telegram section */
 
 .telegram-section {
