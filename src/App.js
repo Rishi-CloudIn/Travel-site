@@ -12,24 +12,51 @@ import Safe from "./Component/Safe/Safe";
 import Table from "./Component/Table/Table";
 import Toke from "./Component/Tokenomic/Toke";
 import Work from "./Component/Work/Work";
+import React, { useState, useEffect } from 'react';
 
 function App ()
 {
+  const [ loading, setLoading ] = useState( false );
+  useEffect( () =>
+  {
+    setLoading( true );
+    setTimeout( () =>
+    {
+      setLoading( false );
+    }, 2000 );
+  }, [] );
   return (
+
+
     <div className="App">
-      <Navbar />
-      <Home />
-      <Client />
-      <Card />
-      <About />
-      <Planet />
-      <Work />
-      <Safe />
-      <Toke />
-      <Freedom />
-      <Table />
-      <Faq />
-      <Footer />
+
+      {loading ? (
+        <div class="travel-loader">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+
+
+      ) : (
+        <div>
+          <Navbar />
+          <Home />
+          <Client />
+          <Card />
+          <About />
+          <Planet />
+          <Work />
+          <Safe />
+          <Toke />
+          <Freedom />
+          <Table />
+          <Faq />
+          <Footer />
+        </div>
+      )
+      }
+
     </div>
   );
 }
