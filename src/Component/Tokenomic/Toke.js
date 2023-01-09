@@ -66,7 +66,7 @@ function Toke ()
           <div className="row d-flex flex-md-row flex-column justify-content-center mt-4">
             <div className="col-md-3 col-12 d-flex justify-content-center d-md-none"><i className="cu fs-1"><BsUmbrellaFill /></i></div>
             <div className="col-md-3 col-12 toke-text  text-white text-md-end text-center">
-              <AnimationOnScroll animateIn="animate__bounceIn">
+              <AnimationOnScroll animateIn="animate__bounceIn"> 
 
                 <span className="h5 text-info d-md-none">Buy</span><br />
                 TIF<br />

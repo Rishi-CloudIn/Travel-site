@@ -16,7 +16,7 @@ function Client ()
           {/* <div > */}
           <Swiper
             spaceBetween={20}
-            slidesPerView={4}
+            slidesPerView={4} 
             autoplay={{
               delay: 2000,
               pauseOnMouseEnter: true,

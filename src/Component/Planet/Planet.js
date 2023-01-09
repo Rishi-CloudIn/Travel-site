@@ -46,7 +46,7 @@ function Planet() {
           </div>
 
           <div className="d-flex justify-content-center mt-5">
-            <a href="#" className="earn-btn-item">
+            <a href="void:" className="earn-btn-item">
               <span>
                 <BsFillArrowRightCircleFill className="me-2" />
               </span>
